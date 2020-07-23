@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a38;
+    color: #CCCFC7;
+}
+.container {
+    border: 1px solid red;
+    background-image: url(/img/bgImg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #2a2a38;
+    margin-top: 2%;
+    height: 750px;
+    width: 1125px;
+}
+
+header {
+    border: 1px solid red;
+    display: flex;
+    align-self: stretch;
+    height: 15%;
+}
+
+.logo {
+    width: 100%;
+    justify-content: flex-start;
+    
+}
+
+.login {
+    width: 100%;
+    align-self: center;
+    text-align: right;
+}
+
+.title {
+    height: 10%;
+    font-size: 50px;
+    padding-left: 10px;
+    color: #76b591;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.content {
+    height: 50%;
+}
+
+.carousel {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.5s;
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.controls .arrow span {
+    font-size: 60px;
+    color: #76B591
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0px;
+}
+
+.controls ul li {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 3px solid #000000;
+    background: #76B591;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: #CCCFC7;
+}
+
+.arrow.left {
+    left: 100px;
+}
+
+.arrow.right {
+    right: 100px;
+}
+
+footer {
+    height: 25%;
+}
+div {
+    border: 1px solid red;
+
+}
+
+
