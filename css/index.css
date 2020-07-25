@@ -81,7 +81,7 @@ font-family: 'Architects Daughter', cursive;
     height: 50%;
 }
 
-.contentABout {
+.contentAbout {
     height: 50%;
 }
 
@@ -101,7 +101,7 @@ font-family: 'Architects Daughter', cursive;
 .slider {
 height: 100%;
 display: flex;
-width: 800%;
+width: 400%;
 transition: all 0.5s;
 }
 
@@ -187,11 +187,11 @@ cursor: pointer;
 background: #CCCFC7;
 }
 
-.arrowAbout.leftAbout {
+.arrow.left {
 left: 60px;
 }
 
-.arrowAbout.rightAbout {
+.arrow.right {
 right: 60px;
 }
 
@@ -280,7 +280,7 @@ right: 60px;
     cursor: pointer;
 }
     
-.controlsAbout ul li.selected {
+.controlsAbout ul li.selectedAbout {
     background: #CCCFC7;
 }
     
