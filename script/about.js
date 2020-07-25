@@ -1,31 +1,31 @@
-const sliderAbout = document.querySelector('.slider');
-const leftArrowAbout = document.querySelector('.left');
-const rightArrowAbout = document.querySelector('.right');
-const indicatorParentsAbout = document.querySelector('.controls ul');
+const sliderAbout = document.querySelector('.sliderAbout');
+const leftArrowAbout = document.querySelector('.leftAbout');
+const rightArrowAbout = document.querySelector('.rightAbout');
+const indicatorParentsAbout = document.querySelector('.controlsAbout ul');
 
 let sectionIndexAbout = 0;
 
 function setIndexAbout() {
-    document.querySelector('.controls .selected').classList.remove('selected');
+    document.querySelector('.controlsAbout .selectedAbout').classList.remove('selectedAbout');
     sliderAbout.style.transform = 'translate(' + (sectionIndexAbout) * -12.5 + '%)';
 };
 
-document.querySelectorAll('.controls li').forEach(function (indicator, index) {
+document.querySelectorAll('.controlsAbout li').forEach(function (indicator, index) {
     indicator.addEventListener('click', function () {
         sectionIndexAbout = index;
-        setIndex(sectionIndexAbout);
-        indicator.classList.add('selected');
+        setIndexAbout(sectionIndexAbout);
+        indicator.classList.add('selectedAbout');
     });
 });
 
-leftArrow.addEventListener('click', function() {
+leftArrowAbout.addEventListener('click', function() {
     sectionIndexAbout = (sectionIndexAbout > 0) ? sectionIndexAbout - 1 : 0;
-    setIndex(sectionIndexAbout);
-    indicatorParents.children[sectionIndexAbout].classList.add('selected');
+    setIndexAbout(sectionIndexAbout);
+    indicatorParentsAbout.children[sectionIndexAbout].classList.add('selectedAbout');
 })
 
-rightArrow.addEventListener('click', function() {
+rightArrowAbout.addEventListener('click', function() {
     sectionIndexAbout = (sectionIndexAbout < 7) ? sectionIndexAbout + 1 : 7;
-    setIndex(sectionIndexAbout);
-    indicatorParents.children[sectionIndexAbout].classList.add('selected');
+    setIndexAbout(sectionIndexAbout);
+    indicatorParentsAbout.children[sectionIndexAbout].classList.add('selectedAbout');
 })
