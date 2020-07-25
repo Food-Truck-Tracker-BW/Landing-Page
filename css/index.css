@@ -24,7 +24,12 @@ height: 15%;
 .logo {
 width: 100%;
 justify-content: flex-start;
+}
 
+.logo img {
+    margin-top: 30px;
+    height: 250px;
+    width: 350px;
 }
 
 .login {
@@ -69,12 +74,15 @@ text-decoration: none;
 }
 
 .title {
-height: 10%;
-font-size: 50px;
-padding-left: 30px;
-color: #76b591;
-text-shadow: 0 0 10px #000000, 0 0 10px #000000;
-font-family: 'Architects Daughter', cursive;
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+    font-size: 50px;
+    padding-right: 100px;
+    color: #76b591;
+    -webkit-text-stroke: 1px #2a2a38;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .content {
@@ -375,45 +383,6 @@ section {
 
 .bio-right {
     width: 70%;
-}
-
-.home {
-    display: flex;
-    justify-content: center;
-}
-
-.home a:link, 
-.home a:visited {
-padding-top: 10px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 10px;
-border: 1px solid #76B591;
-border-radius: 10px;
-background-color: #2a2a38;
-font-family: 'Playfair Display', serif;
-font-size: 15px;
-color: #76B591;
-font-weight: bold;
-text-decoration: none;
-text-shadow: none;
-}
-
-.home a:hover, 
-.home a:active {
-padding-top: 10px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 10px;
-border: 1px solid #2a2a38;
-border-radius: 10px;
-background-color: #76B591;
-font-family: 'Playfair Display', serif;
-font-size: 15px;
-color: #2a2a38;
-font-weight: bolder;
-text-decoration: none;
-text-shadow: none;
 }
 
 
