@@ -1,78 +1,71 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 body {
-display: flex;
-justify-content: center;
-background-color: #2a2a38;
-color: #CCCFC7;
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a38;
+    color: #CCCFC7;
+    margin: 0px;
 }
 .container {
-background-image: url(/img/bgImg.jpg);
-background-size: contain;
-background-repeat: no-repeat;
-background-color: #2a2a38;
-margin-top: 2%;
-height: 750px;
-width: 1125px;
+    background-image: url(/img/bgImg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #2a2a38;
+    margin-top: 2%;
+    height: 750px;
+    width: 1125px;
 }
-
 header {
-display: flex;
-align-self: stretch;
-height: 15%;
+    display: flex;
+    align-self: stretch;
+    height: 15%;
 }
-
 .logo {
-width: 100%;
-justify-content: flex-start;
+    width: 100%;
+    justify-content: flex-start;
 }
-
 .logo img {
     margin-top: 30px;
     height: 250px;
     width: 350px;
 }
-
 .login {
-width: 100%;
-align-self: center;
-text-align: right;
+    width: 100%;
+    align-self: center;
+    text-align: right;
 }
-
-
 .login a:link, 
 .login a:visited {
-margin: 30px;
-padding-top: 10px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 10px;
-border: 1px solid #76B591;
-border-radius: 10px;
-background-color: #2a2a38;
-font-family: 'Playfair Display', serif;
-font-size: 15px;
-color: #76B591;
-font-weight: bold;
-text-decoration: none;
+    margin: 30px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border: 1px solid #76B591;
+    border-radius: 10px;
+    background-color: #2a2a38;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #76B591;
+    font-weight: bold;
+    text-decoration: none;
 }
-
 .login a:hover, 
 .login a:active {
-margin: 30px;
-padding-top: 10px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 10px;
-border: 1px solid #2a2a38;
-border-radius: 10px;
-background-color: #76B591;
-font-family: 'Playfair Display', serif;
-font-size: 15px;
-color: #2a2a38;
-font-weight: bolder;
-text-decoration: none;
+    margin: 30px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border: 1px solid #2a2a38;
+    border-radius: 10px;
+    background-color: #76B591;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #2a2a38;
+    font-weight: bolder;
+    text-decoration: none;
 }
-
 .title {
     display: flex;
     justify-content: flex-end;
@@ -84,132 +77,113 @@ text-decoration: none;
     text-shadow: 0 0 10px #000000, 0 0 10px #000000;
     font-family: 'Architects Daughter', cursive;
 }
-
 .content {
     height: 50%;
 }
-
 .contentAbout {
     height: 50%;
 }
-
 .carousel {
     height: 100%;
     position: relative;
     overflow: hidden;
 }
-
 .carouselAbout {
     height: 100%;
     position: relative;
     overflow: hidden;
 }
-    
-    
 .slider {
-height: 100%;
-display: flex;
-width: 400%;
-transition: all 0.5s;
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.5s;
 }
-
-.slider section {
-flex-basis: 100%;
-display: flex;
-justify-content: center;
-align-self: center;
-font-size: 20px;
-text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-font-weight: bold;
-}
-
-.slider a:link, 
-.slider a:visited {
-padding-top: 10px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 10px;
-border: 1px solid #76B591;
-border-radius: 10px;
-background-color: #2a2a38;
-font-family: 'Playfair Display', serif;
-font-size: 15px;
-color: #76B591;
-font-weight: bold;
-text-decoration: none;
-text-shadow: none;
-}
-
-.slider a:hover, 
-.slider a:active {
-padding-top: 10px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 10px;
-border: 1px solid #2a2a38;
-border-radius: 10px;
-background-color: #76B591;
-font-family: 'Playfair Display', serif;
-font-size: 15px;
-color: #2a2a38;
-font-weight: bolder;
-text-decoration: none;
-text-shadow: none;
-}
-
-.controls .arrow {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-cursor: pointer;
-}
-
-
-.controls .arrow span {
-font-size: 60px;
-color: #76B591
-}
-
-.controls ul {
-position: absolute;
-bottom: 20px;
-left: 50%;
-transform: translate(-50%);
-list-style: none;
-display: flex;
-padding: 0;
-margin: 0px;
-}
-
-.controls ul li {
-width: 14px;
-height: 14px;
-margin: 5px;
-border-radius: 50px;
-border: 3px solid #000000;
-background: #76B591;
-cursor: pointer;
-}
-
-.controls ul li.selected {
-background: #CCCFC7;
-}
-
-.arrow.left {
-left: 60px;
-}
-
-.arrow.right {
-right: 60px;
-}
-
 .sliderAbout {
     height: 100%;
     display: flex;
     width: 800%;
     transition: all 0.5s;
 }
-    
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 20px;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    font-weight: bold;
+}
+.slider a:link, 
+.slider a:visited {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border: 1px solid #76B591;
+    border-radius: 10px;
+    background-color: #2a2a38;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #76B591;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: none;
+}
+.slider a:hover, 
+.slider a:active {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border: 1px solid #2a2a38;
+    border-radius: 10px;
+    background-color: #76B591;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #2a2a38;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: none;
+}
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.controls .arrow span {
+    font-size: 60px;
+    color: #76B591
+}
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0px;
+}
+.controls ul li {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 3px solid #000000;
+    background: #76B591;
+    cursor: pointer;
+}
+.controls ul li.selected {
+    background: #CCCFC7;
+}
+.arrow.left {
+    left: 60px;
+}
+.arrow.right {
+    right: 60px;
+}
 .sliderAbout section {
     flex-basis: 100%;
     display: flex;
@@ -219,7 +193,6 @@ right: 60px;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     font-weight: bold;
 }
-    
 .sliderAbout a:link, 
 .sliderAbout a:visited {
     padding-top: 10px;
@@ -236,7 +209,6 @@ right: 60px;
     text-decoration: none;
     text-shadow: none;
 }
-    
 .sliderAbout a:hover, 
 .sliderAbout a:active {
     padding-top: 10px;
@@ -253,20 +225,16 @@ right: 60px;
     text-decoration: none;
     text-shadow: none;
 }
-    
 .controlsAbout .arrowAbout {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
 }
-    
-    
 .controlsAbout .arrowAbout span {
     font-size: 60px;
     color: #76B591
 }
-    
 .controlsAbout ul {
     position: absolute;
     bottom: 20px;
@@ -277,7 +245,6 @@ right: 60px;
     padding: 0;
     margin: 0px;
     }
-    
 .controlsAbout ul li {
     width: 14px;
     height: 14px;
@@ -287,26 +254,21 @@ right: 60px;
     background: #76B591;
     cursor: pointer;
 }
-    
 .controlsAbout ul li.selectedAbout {
     background: #CCCFC7;
 }
-    
 .arrowAbout.leftAbout {
     left: 60px;
 }
-    
 .arrowAbout.rightAbout {
     right: 60px;
 }
-
 footer {
     height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -316,41 +278,33 @@ footer {
     margin: 5px 2px;
     border-radius: 50%;
 }
-
 .fa:hover {
-opacity: 0.7;
+    opacity: 0.7;
 }
-
 .fa-facebook {
-background: #3B5998;
-color: white;
+    background: #3B5998;
+    color: white;
 }
-
 .fa-twitter {
-background: #55ACEE;
-color: white;
+    background: #55ACEE;
+    color: white;
 }
-
 .fa-youtube {
-background: #bb0000;
-color: white;
+    background: #bb0000;
+    color: white;
 }
-
 .fa-instagram {
-background: #125688;
-color: white;
+    background: #125688;
+    color: white;
 }
-
 .fa-snapchat-ghost {
     background: #fffc00;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 section {
     margin: 3%
 }
-
 .bio-container {
     display: flex;
     align-items: stretch;
@@ -359,30 +313,282 @@ section {
     color: #76B591;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
-
 .bio-photo {
     display: flex;
     justify-content: center;
     width: 50%;
 }
-
 .bio-photo img {
     height: 200px;
     width: 200px;
 }
-
 .bio {
     display: flex;
     margin: 20px 10px;
     width: 50%;
 }
-
 .bio-left {
     width: 30%;
 }
-
 .bio-right {
     width: 70%;
 }
+/* display 1024 */
+@media (max-width: 1024px) {
+    footer {
+        height: 10%;
+    }
+    .container {
+        height: 750px;
+        width: 1024px;
+    }
+    .containerAbout {
+        height: 750px;
+        width: 1024px;
+    }
+}
+/* display 975*/
+@media (max-width: 975px) {
+    .container {
+        width: 100%;
+    }
+    .containerAbout {
+        width: 100%;
+    }
+    .logo img {
+        margin-top: 30px;
+        height: 150px;
+        width: 250px;
+    }
+    .title {
+        font-size: 40px;
+        padding-right: 50px;
+    }
+    .login a:link, 
+    .login a:visited {
+        margin: 15px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border: 1px solid #76B591;
+        border-radius: 10px;
+        background-color: #2a2a38;
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        color: #76B591;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .login a:hover, 
+    .login a:active {
+        margin: 15px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border: 1px solid #2a2a38;
+        border-radius: 10px;
+        background-color: #76B591;
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        color: #2a2a38;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    .slider section {
+        font-size: 16px;
+    }
+    .arrow.left {
+        left: 30px;
+    }
+    .arrow.right {
+        right: 30px;
+    }
+    .arrowAbout.left {
+        left: 30px;
+    }
+    .arrowAbout.right {
+        right: 30px;
+    }
+    .content {
+        height: 32%;
+    }
+    .contentAbout {
+        width: 100%;
+        height: 32%;
+    }
+    .bio-container {
+        font-size: 16px;
+    }
+    .bio-photo {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .bio-photo img {
+        height: 100px;
+        width: 100px;
+    }
+    .bio {
+        display: flex;
+        margin: 20px 10px;
+        width: 50%;
+    }
+    .bio-contact {
+        display: flex;
+        flex-direction: row;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+}
+/* display 775*/
+@media (max-width: 775px) {
+    .container {
+        background-image: none;
+        height: auto;
+    }
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .login a:link, 
+    .login a:visited {
+        margin: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #76B591;
+        border-radius: 10px;
+        background-color: #2a2a38;
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        color: #76B591;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .login a:hover, 
+    .login a:active {
+        margin: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #2a2a38;
+        border-radius: 10px;
+        background-color: #76B591;
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        color: #2a2a38;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    .title {
+        display: none;
+    }
+    .content {
+        height: auto;
+    }
+    .slider section {
+        font-size: 12px;
+    }
+    .sliderAbout section {
+        font-size: 12px;
+    }
+    .controls .arrow span {
+        font-size: 35px;
+        color: #76B591
+    }
+    .controlsAbout .arrowAbout span {
+        font-size: 35px;
+        color: #76B591
+    }
+    .arrow.left {
+        left: 0px;
+    }
+    .arrow.right {
+        right: 0px;
+    }
+    .arrowAbout.leftAbout {
+        left: 15px;
+    }
+    .arrowAbout.rightAbout {
+        right: 15px;
+    }
+    .bio {
+        justify-content: space-evenly;
+    }
+    .bio-container {
+        font-size: 12px;
+        width: 100Z;
+        color: #76B591;
+        text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 50px 0px 100px 0px;
+    }
+    .bio-photo {
+        margin: 0px;
+    }
+    .bio-photo img {
+        height: 100px;
+        width: 100px;
+        margin: 0px;
+    }
+    .bio-contact .bio .bio-left {
+        text-align: left;
+        width: auto;
+        margin-left: 100%;
+    }
 
-
+    .bio-right {
+        text-align: left;
+        width: auto;
+        margin-left: 10px;
+     }
+     .bio-left {
+         margin-right: 10px;
+     }
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    .controlsAbout ul {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%);
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0px;
+        }
+        .sliderAbout {
+            margin-bottom: 200px;
+        }
+}
