@@ -83,12 +83,20 @@ header {
 .contentAbout {
     height: 50%;
 }
+.contentReviews {
+    height: 50%;
+}
 .carousel {
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 .carouselAbout {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carouselReviews {
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -105,7 +113,31 @@ header {
     width: 800%;
     transition: all 0.5s;
 }
+.sliderReviews {
+    height: 100%;
+    display: flex;
+    width: 800%;
+    transition: all 0.5s;
+}
 .slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 20px;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    font-weight: bold;
+}
+.sliderAbout section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 20px;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    font-weight: bold;
+}
+.sliderReviews section {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
@@ -146,53 +178,6 @@ header {
     text-decoration: none;
     text-shadow: none;
 }
-.controls .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-.controls .arrow span {
-    font-size: 60px;
-    color: #76B591
-}
-.controls ul {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0px;
-}
-.controls ul li {
-    width: 14px;
-    height: 14px;
-    margin: 5px;
-    border-radius: 50px;
-    border: 3px solid #000000;
-    background: #76B591;
-    cursor: pointer;
-}
-.controls ul li.selected {
-    background: #CCCFC7;
-}
-.arrow.left {
-    left: 60px;
-}
-.arrow.right {
-    right: 60px;
-}
-.sliderAbout section {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    font-size: 20px;
-    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-    font-weight: bold;
-}
 .sliderAbout a:link, 
 .sliderAbout a:visited {
     padding-top: 10px;
@@ -225,6 +210,48 @@ header {
     text-decoration: none;
     text-shadow: none;
 }
+.sliderReviews a:link, 
+.sliderReviews a:visited {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border: 1px solid #76B591;
+    border-radius: 10px;
+    background-color: #2a2a38;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #76B591;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: none;
+}
+.sliderReviews a:hover, 
+.sliderReviews a:active {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border: 1px solid #2a2a38;
+    border-radius: 10px;
+    background-color: #76B591;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #2a2a38;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: none;
+}
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.controls .arrow span {
+    font-size: 60px;
+    color: #76B591
+}
 .controlsAbout .arrowAbout {
     position: absolute;
     top: 50%;
@@ -234,6 +261,38 @@ header {
 .controlsAbout .arrowAbout span {
     font-size: 60px;
     color: #76B591
+}
+.controlsReviews .arrowReviews {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.controlsReviews .arrowReviews span {
+    font-size: 60px;
+    color: #76B591
+}
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0px;
+}
+.controls ul li {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 3px solid #000000;
+    background: #76B591;
+    cursor: pointer;
+}
+.controls ul li.selected {
+    background: #CCCFC7;
 }
 .controlsAbout ul {
     position: absolute;
@@ -257,11 +316,84 @@ header {
 .controlsAbout ul li.selectedAbout {
     background: #CCCFC7;
 }
-.arrowAbout.leftAbout {
+.controlsReviews ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0px;
+    }
+.controlsReviews ul li {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 3px solid #000000;
+    background: #76B591;
+    cursor: pointer;
+}
+.controlsReviews ul li.selectedReviews {
+    background: #CCCFC7;
+}
+.arrow.left {
     left: 60px;
+}
+.arrow.right {
+    right: 60px;
 }
 .arrowAbout.rightAbout {
     right: 60px;
+}
+.arrowAbout.leftAbout {
+    left: 60px;
+}
+.arrowReviews.leftReviews {
+    left: 60px;
+}
+.arrowReviews.rightReviews {
+    right: 60px;
+}
+.controlsReviews .arrowReviews {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.controlsReviews .arrowReviews span {
+    font-size: 60px;
+    color: #76B591
+}
+.controlsReviews ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0px;
+    }
+.controlsReviews ul li {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 3px solid #000000;
+    background: #76B591;
+    cursor: pointer;
+}
+.controlsReviews ul li.selectedReviews {
+    background: #CCCFC7;
+}
+.stretch {
+    display: flex;
+    flex-direction: column;
+}
+.stretch a {
+    margin: 15px;
 }
 footer {
     height: 25%;
@@ -313,6 +445,11 @@ section {
     color: #76B591;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
+
+.bio-contact {
+    color: #76B591;
+}
+
 .bio-photo {
     display: flex;
     justify-content: center;
@@ -328,10 +465,15 @@ section {
     width: 50%;
 }
 .bio-left {
-    width: 30%;
+    margin-right: 10px;
+    width: auto;
 }
 .bio-right {
-    width: 70%;
+    margin-left: 10px;
+    width: auto;
+}
+.bio-review{
+    margin-left: 20px;
 }
 /* display 1024 */
 @media (max-width: 1024px) {
@@ -346,6 +488,10 @@ section {
         height: 750px;
         width: 1024px;
     }
+    .containerReviews {
+        height: 750px;
+        width: 1024px;
+    }
 }
 /* display 975*/
 @media (max-width: 975px) {
@@ -353,6 +499,9 @@ section {
         width: 100%;
     }
     .containerAbout {
+        width: 100%;
+    }
+    .containerReviews {
         width: 100%;
     }
     .logo img {
@@ -405,16 +554,23 @@ section {
     .arrow.right {
         right: 30px;
     }
-    .arrowAbout.left {
+    .arrowReviews.left {
         left: 30px;
     }
     .arrowAbout.right {
+        right: 30px;
+    }
+    .arrowReviews.right {
         right: 30px;
     }
     .content {
         height: 32%;
     }
     .contentAbout {
+        width: 100%;
+        height: 32%;
+    }
+    .contentReviews {
         width: 100%;
         height: 32%;
     }
@@ -435,10 +591,7 @@ section {
         margin: 20px 10px;
         width: 50%;
     }
-    .bio-contact {
-        display: flex;
-        flex-direction: row;
-    }
+
     .fa {
         padding: 10px;
         font-size: 20px;
@@ -468,6 +621,7 @@ section {
         display: flex;
         justify-content: center;
         width: 100%;
+        margin-top: 30px;
     }
     .login a:link, 
     .login a:visited {
@@ -513,11 +667,18 @@ section {
     .sliderAbout section {
         font-size: 12px;
     }
+    .sliderReviews section {
+        font-size: 12px;
+    }
     .controls .arrow span {
         font-size: 35px;
         color: #76B591
     }
     .controlsAbout .arrowAbout span {
+        font-size: 35px;
+        color: #76B591
+    }
+    .controlsReviews .arrowReviews span {
         font-size: 35px;
         color: #76B591
     }
@@ -530,7 +691,13 @@ section {
     .arrowAbout.leftAbout {
         left: 15px;
     }
+    .arrowReviews.leftReviews {
+        left: 15px;
+    }
     .arrowAbout.rightAbout {
+        right: 15px;
+    }
+    .arrowReviews.rightReviews {
         right: 15px;
     }
     .bio {
@@ -555,11 +722,6 @@ section {
         width: 100px;
         margin: 0px;
     }
-    .bio-contact .bio .bio-left {
-        text-align: left;
-        width: auto;
-        margin-left: 100%;
-    }
 
     .bio-right {
         text-align: left;
@@ -567,7 +729,9 @@ section {
         margin-left: 10px;
      }
      .bio-left {
-         margin-right: 10px;
+        text-align: left;
+        width: auto;
+        margin-right: 10px;
      }
     .fa {
         padding: 10px;
@@ -587,8 +751,21 @@ section {
         display: flex;
         padding: 0;
         margin: 0px;
-        }
-        .sliderAbout {
-            margin-bottom: 200px;
-        }
+    }
+    .controlsReviews ul {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%);
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0px;
+    }
+    .sliderAbout {
+        margin-bottom: 200px;
+    }
+    .sliderReviews {
+        margin-bottom: 200px;
+    }
 }
